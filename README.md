@@ -10,12 +10,18 @@ This is my attempt at the QA assignment for your company
   `npm install`
 - Install the Chromium browser \
   `npx playwright install chromium`
+- If the operating system complains that not all dependencies have been installed,
+ it will ask you to run this command. Please run this command  
+`npx playwright install-deps`
 
 ## Run
 
 Run the tests using the following command
 
 `npm test`
+
+The configuration is set to run the tests in headed mode which is good for debugging and for a demo.
+This needs to be changed if running in a CI environment to run headless.
 
 ## Details
 
