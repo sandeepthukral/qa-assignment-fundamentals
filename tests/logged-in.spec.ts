@@ -5,7 +5,7 @@ import {SavedSearchResponse} from "../models/responses.model";
 test.use({ userAgent: secretUserAgent });
 
 test.describe('Tests for a logged in user', async () => {
-    test('Should show saved searches', async ({ homePage, loginPage, savedSearchesPage }) => {
+    test('Should show saved searches for the logged-in user', async ({ homePage, loginPage, savedSearchesPage }) => {
         await homePage.loginButton.click();
         await loginPage.loginAsUser(user.emailAddress, user.password);
         await homePage.accountMenu.click();

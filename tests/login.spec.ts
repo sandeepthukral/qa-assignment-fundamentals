@@ -3,7 +3,7 @@ import {secretUserAgent, user} from "../secrets/secrets";
 
 test.use({ userAgent: secretUserAgent });
 
-test('Should be able to login to Funda', async ({homePage, loginPage}) => {
+test('Should be able to log in to Funda as an end user', async ({homePage, loginPage}) => {
     await homePage.loginButton.click();
 
     await loginPage.loginAsUser(user.emailAddress, user.password);

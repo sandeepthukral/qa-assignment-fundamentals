@@ -7,7 +7,7 @@ const cityName = 'Den Haag';
 
 test.describe('Searching for houses tests', async () => {
 
-    test('Should search for properties in a city and filter on type', async ({ homePage, page, searchFiltersSlide, searchResultsPage}) => {
+    test('Should search for properties in a city and filter on type of property', async ({ homePage, page, searchFiltersSlide, searchResultsPage}) => {
         await homePage.searchBox.click();
         await homePage.searchBox.pressSequentially(cityName, {delay: 20});
 
