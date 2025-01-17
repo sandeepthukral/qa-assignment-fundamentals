@@ -5,6 +5,7 @@ This is my attempt at the QA assignment for your company
 
 ## Requirements
 - NodeJS
+
 ## Instructions for OsX
 - Run the following command to install the requirements \
   `npm install`
