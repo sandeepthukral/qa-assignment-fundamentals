@@ -1,6 +1,5 @@
 import {BasePage} from "./base.po";
 import {Page} from "@playwright/test";
-import {user} from "../secrets/secrets";
 
 export class LoginPage extends BasePage{
     constructor(page: Page) {

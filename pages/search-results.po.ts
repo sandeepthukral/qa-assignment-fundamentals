@@ -1,6 +1,5 @@
 import {BasePage} from "./base.po";
-import {expect, Page} from "@playwright/test";
-import {executionAsyncId} from "node:async_hooks";
+import {Page} from "@playwright/test";
 
 export class SearchResultsPage extends BasePage {
     constructor(page: Page) {
